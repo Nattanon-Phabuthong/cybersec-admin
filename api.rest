@@ -1,20 +1,24 @@
-#Create User
-# POST http://localhost:3000/user
-# Content-Type: application/json
+### Create User
+POST  http://localhost:3000/user
+Content-Type: application/json
 
-# {
-#     "username": "demo1",
-#     "password": "demo1"
-# }
+{
+        "username": "demo50",
+        "password": "demo50"
+}
+    
+### Update User
+PUT http://localhost:3000/user/7
+Content-Type: application/json
 
-# #pdate User (PUT)
-# POST http://localhost:3000/user/2
-# Content-Type: application/json
+{
+    "username": "wan50",
+    "password": "Wan159632"
+}
 
-# {
-#    "username": "wan2",
-#     "password": "wan2"
-# }
+### Delete User
+DELETE http://localhost:3000/user/6
 
-# Delete User (DELETE)
-# DELETE http://localhost:3000/user/2
+### Search User
+GET http://localhost:3000/user/search?q=d
+Content-Type: application/json
